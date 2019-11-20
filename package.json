@@ -38,10 +38,12 @@
     "format": "prettier --write 'src/**/*.{js,jsx}' '*.{js,jsx}' 'cosmos/**/*.{js,jsx}' --single-quote",
     "test": "npm run format && CI=y react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "cosmos": "NODE_ENV=development cosmos"
+    "cosmos": "NODE_ENV=development cosmos",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "."
+  "homepage": "https://DevAshleyD.github.io/React-Tetris"
 }
